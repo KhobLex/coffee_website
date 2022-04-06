@@ -1,0 +1,803 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p, a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+header {
+  width: 100%;
+  min-height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+}
+
+header nav #brand-name {
+  cursor: pointer;
+}
+
+header nav #brand-name h2 {
+  color: #fff;
+  font-family: "clicker script";
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+header nav #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav #menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav #menu ul li:first-child {
+  margin-right: 1em;
+}
+
+header nav #menu ul li {
+  list-style: none;
+}
+
+header nav #menu ul li a {
+  color: #E3DECA;
+  font-family: "cinzel";
+}
+
+header nav #menu ul li a:hover, header nav #menu ul li a:focus {
+  color: #4D2B1E;
+}
+
+header nav #social {
+  cursor: pointer;
+}
+
+header nav #social .icon {
+  margin-right: 0.5em;
+  color: #E3DECA;
+}
+
+header nav #social .icon:hover, header nav #social .icon:focus {
+  color: #4D2B1E;
+}
+
+header #text-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 0.5em;
+  height: 80vh;
+}
+
+header #text-section #coffee {
+  color: #E3DECA;
+  font-family: "clicker script";
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+header #text-section #coffee i {
+  color: #E3DECA;
+}
+
+header #text-section #hero-text {
+  color: #fff;
+  font-family: serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+header #text-section p {
+  color: #d4d2c8b2;
+  margin-bottom: 0.5em;
+}
+
+header #text-section #btn {
+  margin-top: 2em;
+}
+
+header #text-section #btn #order {
+  cursor: pointer;
+  padding: 0.5em;
+  background-color: #DDA35D;
+  border: none;
+  outline: none;
+  color: #E3DECA;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-transition: ease-in-out background-color 400ms;
+  transition: ease-in-out background-color 400ms;
+  border-radius: 0.2em;
+}
+
+header #text-section #btn #order:hover, header #text-section #btn #order:focus {
+  background-color: #412519;
+}
+
+header #design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 30vh;
+  right: 0;
+}
+
+header #design i {
+  margin-bottom: 0.6em;
+  color: #E3DECA;
+  font-size: 0.2em;
+}
+
+header #design .mug {
+  margin: 0.6em 0;
+  font-size: 0.8em;
+  color: #DDA35D;
+}
+
+#ingredient {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(65, 37, 25, 0.808);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 1em;
+}
+
+#ingredient #try h5 {
+  font-size: 1.5em;
+  color: #DDA35D;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+#ingredient #try h3 {
+  font-family: "clicker script";
+  font-size: 5em;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+#ingredient #try #always {
+  color: #412519;
+  background-color: #E3DECA;
+  font-size: 2em;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  display: inline-block;
+}
+
+#ingredient #try #fresh {
+  font-size: 2em;
+  margin-top: 0.5em;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  font-family: "clicker script";
+}
+
+#ingredient #try #fresh i {
+  font-size: 0.2em;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: #DDA35D;
+}
+
+#ingredient #try p {
+  color: #e3deca9f;
+  text-align: justify;
+}
+
+#flavour {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.438);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#flavour #seed {
+  margin: 0 2em;
+  padding: 2em 1em;
+}
+
+#flavour #seed h2 {
+  text-transform: uppercase;
+  font-family: serif;
+  color: #EAE6D8;
+}
+
+#flavour #seed h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #DDA35D;
+}
+
+#flavour #seed p {
+  margin-top: 1em;
+  text-align: justify;
+  color: #e3deca9f;
+  text-align: justify;
+}
+
+#flavour #flavours-container h3 {
+  font-family: "clicker script";
+  text-align: center;
+  font-size: 3em;
+  color: #DDA35D;
+}
+
+#flavour #flavours-container #flavours {
+  margin-top: 1em;
+  color: #E3DECA;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 1em;
+  padding: 1em;
+}
+
+#flavour #flavours-container #flavours div {
+  padding-bottom: 1em;
+}
+
+#flavour #flavours-container #flavours div h4 {
+  text-align: center;
+  color: #4D2B1E;
+  background-color: #E3DECA;
+  font-family: 'Marck Script', cursive;
+  font-size: 1.2em;
+}
+
+#flavour #flavours-container #flavours div p {
+  padding: 1em 0;
+  text-align: justify;
+}
+
+#flavour #flavours-container #flavours div #cta {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#flavour #flavours-container #flavours div #cta p {
+  background-color: #e3deca57;
+  color: #DDA35D;
+  padding: 0.2em 0.3em;
+  border-radius: 1em;
+  border: 1px solid #412519;
+}
+
+#flavour #flavours-container #flavours div #cta a {
+  color: #DDA35D;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-transition: ease-in-out all 600ms;
+  transition: ease-in-out all 600ms;
+}
+
+#flavour #flavours-container #flavours div #cta a:focus, #flavour #flavours-container #flavours div #cta a:hover {
+  color: #644334;
+  text-decoration: underline;
+}
+
+#display {
+  height: auto;
+  height: 30vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  padding: 0.3em;
+}
+
+#display div {
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-blend-mode: multiply;
+  border-radius: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#display div p {
+  visibility: hidden;
+  color: #E3DECA;
+  -webkit-transition: ease-in-out color 600px;
+  transition: ease-in-out color 600px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+#display div:hover, #display div:focus {
+  background-color: #DDA35D;
+  background-blend-mode: multiply;
+}
+
+#display div:hover p, #display div:focus p {
+  visibility: visible;
+}
+
+#contact {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.884);
+  background-blend-mode: multiply;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact #contact-text {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#contact #contact-text h4 {
+  color: #DDA35D;
+  font-size: 1.5em;
+}
+
+#contact #contact-text p {
+  text-align: justify;
+  color: #bbbbbb;
+}
+
+#contact #details #input {
+  width: 100%;
+}
+
+#contact #details #input form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact #details #input form .input {
+  color: #fff;
+  width: 100%;
+  border-radius: 0.3em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+#contact #details #input form .input::-webkit-input-placeholder {
+  color: #DDA35D;
+  font-size: 1em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+#contact #details #input form .input:-ms-input-placeholder {
+  color: #DDA35D;
+  font-size: 1em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+#contact #details #input form .input::-ms-input-placeholder {
+  color: #DDA35D;
+  font-size: 1em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+#contact #details #input form .input::placeholder {
+  color: #DDA35D;
+  font-size: 1em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+#contact #details #input form .input:focus {
+  -webkit-box-shadow: 2px 2px 5px #afadad;
+          box-shadow: 2px 2px 5px #afadad;
+}
+
+#contact #details #input form input {
+  margin-bottom: 1em;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+
+#contact #details #input form textarea {
+  padding: 0.5em;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+#contact #details #input form textarea::-webkit-input-placeholder {
+  font-size: 1.2em !important;
+  letter-spacing: 0;
+}
+
+#contact #details #input form textarea:-ms-input-placeholder {
+  font-size: 1.2em !important;
+  letter-spacing: 0;
+}
+
+#contact #details #input form textarea::-ms-input-placeholder {
+  font-size: 1.2em !important;
+  letter-spacing: 0;
+}
+
+#contact #details #input form textarea::placeholder {
+  font-size: 1.2em !important;
+  letter-spacing: 0;
+}
+
+#contact #details #input form #send {
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 40%;
+  color: #DDA35D;
+  background-color: #412519;
+  border: none;
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 0.3em;
+  -webkit-transition: ease-in-out 700ms background-color;
+  transition: ease-in-out 700ms background-color;
+  -webkit-transition: ease-in-out 600ms color;
+  transition: ease-in-out 600ms color;
+}
+
+#contact #details #input form #send:focus, #contact #details #input form #send:hover {
+  background-color: #2e1a11;
+  color: #E3DECA;
+}
+
+#contact #details #contact-details {
+  margin-top: 1em;
+  color: #E3DECA;
+}
+
+#contact #details #contact-details p {
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 0.5em;
+}
+
+#contact #footer-brand-name {
+  cursor: pointer;
+}
+
+#contact #footer-brand-name h2 {
+  color: #fff;
+  font-family: "clicker script";
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#contact #footer-brand-name h2 i {
+  font-size: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  header #text-section #coffee {
+    font-size: 2em;
+  }
+  header #text-section #hero-text {
+    font-size: 2.2em;
+  }
+  header #text-section #btn #order {
+    font-size: 1.1em;
+  }
+  header #design i {
+    font-size: 0.4em;
+  }
+  header #design .mug {
+    font-size: 1em;
+  }
+  #ingredient {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #ingredient #try {
+    width: 50%;
+  }
+  #ingredient #try h5 {
+    font-size: 1.7em;
+  }
+  #ingredient #try h3 {
+    font-size: 5.5em;
+  }
+  #ingredient #try #always {
+    font-size: 2.2em;
+  }
+  #ingredient #try #fresh {
+    font-size: 2.4em;
+  }
+  #ingredient #try #fresh i {
+    font-size: 0.4em;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  #ingredient #try p {
+    color: #e3deca9f;
+    text-align: justify;
+    padding: 0 2em;
+  }
+  #flavour {
+    padding: 1em 0;
+  }
+  #flavour #seed h2 {
+    font-size: 1.9em;
+  }
+  #flavour #seed p {
+    margin-top: 1em;
+    text-align: center;
+  }
+  #flavour #flavours-container h3 {
+    font-family: "clicker script";
+    text-align: center;
+    font-size: 3em;
+    color: #DDA35D;
+  }
+  #flavour #flavours-container #flavours {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+  }
+  #flavour #flavours-container #flavours div h4 {
+    text-align: center;
+    color: #4D2B1E;
+    background-color: #E3DECA;
+  }
+  #flavour #flavours-container #flavours div p {
+    padding: 1em 0;
+    text-align: justify;
+  }
+  #display {
+    height: 50vh;
+  }
+  #contact #contact-text {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  #contact #contact-text h4 {
+    font-size: 2em;
+  }
+  #contact #contact-text p {
+    text-align: justify;
+    color: #bbbbbb;
+  }
+  #contact #details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+  }
+  #contact #details #input {
+    width: 50%;
+  }
+  #contact #details #contact-details {
+    width: 40%;
+  }
+  #contact #details #contact-details p {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #ingredient #try h5 {
+    font-size: 1.9em;
+  }
+  #ingredient #try h3 {
+    font-size: 6em;
+  }
+  #ingredient #try #always {
+    font-size: 2.5em;
+  }
+  #ingredient #try #fresh {
+    font-size: 2.6em;
+  }
+  #ingredient #try #fresh i {
+    font-size: 0.4em;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  #ingredient #try p {
+    color: #e3deca9f;
+    text-align: justify;
+    padding: 0 2em;
+  }
+  #flavour #seed h2 {
+    font-size: 2.2em;
+  }
+  #flavour #seed p {
+    text-align: center;
+  }
+  #flavour #flavours-container {
+    padding-bottom: 2em;
+  }
+  #flavour #flavours-container h3 {
+    font-size: 4em;
+  }
+  #flavour #flavours-container #flavours {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #display {
+    height: 50vh;
+  }
+  #contact #contact-text h4 {
+    font-size: 2em;
+  }
+  #contact #contact-text p {
+    text-align: justify;
+    color: #bbbbbb;
+  }
+  #contact #details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+  }
+  #contact #details #input {
+    width: 40%;
+  }
+  #contact #details #contact-details {
+    width: 40%;
+  }
+  #contact #details #contact-details p {
+    margin-bottom: 0.5em;
+  }
+}
+/*# sourceMappingURL=style.min.css.map */
